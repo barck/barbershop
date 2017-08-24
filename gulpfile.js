@@ -12,7 +12,9 @@ var paths = {
 
 gulp.task('default',  ['clean'], function() {
 
-    gulp.start('browser-sync', 'stylus', 'scripts', 'compile', 'copy', 'watch');
+    gulp.start(
+        // 'browser-sync', 
+        'stylus', 'scripts', 'compile', 'copy', 'watch');
     // place code for your default task
 });
 
@@ -69,11 +71,11 @@ gulp.task('watch', function() {
     gulp.watch('app/js/*.js', ['scripts']);                                                  // Наблюдение за другими типами файлов
 });
 
-gulp.task('browser-sync', function() { // Создаем таск browser-sync
-    browserSync({ // Выполняем browser Sync
-        server: { // Определяем параметры сервера
-            baseDir: 'public' // Директория для сервера - app
-        },
-        notify: true // Отключаем уведомления
-    });
-});
+// gulp.task('browser-sync', function() { // Создаем таск browser-sync
+//     browserSync({ // Выполняем browser Sync
+//         server: { // Определяем параметры сервера
+//             baseDir: 'public' // Директория для сервера - app
+//         },
+//         notify: true // Отключаем уведомления
+//     });
+// });
