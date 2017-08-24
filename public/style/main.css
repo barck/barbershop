@@ -375,5 +375,5 @@ template {
 }
 html {
   box-sizing: border-box;
-  background: #fff;
+  background: #000 url("../img/bg.png");
 }
