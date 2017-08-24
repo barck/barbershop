@@ -400,38 +400,38 @@ html {
   width: 140px;
   float: right;
 }
-.index-logo {
+main .index-logo {
   width: 368px;
   height: 204px;
   margin: 0 auto;
   margin-bottom: 25px;
 }
-.features {
+main .features {
   margin-bottom: 80px;
 }
-.features .features-item {
+main .features .features-item {
   float: left;
   width: 300px;
   outline: 1px solid #f00;
   min-height: 170px;
   margin-right: 20px;
 }
-.features .features-item:nth-child(3n) {
+main .features .features-item:nth-child(3n) {
   margin-right: 0;
 }
-.index-content {
+main .index-content {
   padding: 50px 80px;
   margin-bottom: 35px;
   background: #c3c3c3;
   width: 100%;
 }
-.index-content .index-content-left {
+main .index-content .index-content-left {
   min-height: 300px;
   float: left;
   width: 380px;
   outline: 1px solid #f00;
 }
-.index-content .index-content-right {
+main .index-content .index-content-right {
   min-height: 300px;
   float: right;
   width: 300px;
