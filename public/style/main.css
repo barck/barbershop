@@ -373,7 +373,92 @@ template {
 *::after {
   box-sizing: inherit;
 }
+.clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}
 html {
   box-sizing: border-box;
-  background: #000 url("../img/bg.png");
+  background: #000 url("../img/bg.png") center;
+}
+.container {
+  width: 960px;
+  padding: 0 10px;
+  margin: 0 auto;
+  outline: 1px solid #ffc0cb;
+}
+.main-header {
+  border: 1px solid #fff;
+  margin-bottom: 60px;
+}
+.main-header .main-navigation {
+  width: 780px;
+  float: left;
+}
+.main-header .user-block {
+  width: 140px;
+  float: right;
+}
+.index-logo {
+  width: 368px;
+  height: 204px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+.features {
+  margin-bottom: 80px;
+}
+.features .features-item {
+  float: left;
+  width: 300px;
+  outline: 1px solid #f00;
+  min-height: 170px;
+  margin-right: 20px;
+}
+.features .features-item:nth-child(3n) {
+  margin-right: 0;
+}
+.index-content {
+  padding: 50px 80px;
+  margin-bottom: 35px;
+  background: #c3c3c3;
+  width: 100%;
+}
+.index-content .index-content-left {
+  min-height: 300px;
+  float: left;
+  width: 380px;
+  outline: 1px solid #f00;
+}
+.index-content .index-content-right {
+  min-height: 300px;
+  float: right;
+  width: 300px;
+  outline: 1px solid #f00;
+}
+.main-footer {
+  margin-top: 65px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  background: #000 url("../img/footer-bg.png");
+}
+.main-footer .footer-contacts {
+  float: left;
+  width: 320px;
+  margin-right: 60px;
+  outline: 1px solid #f00;
+  min-height: 70px;
+}
+.main-footer .footer-social {
+  float: left;
+  width: 180px;
+  outline: 1px solid #f00;
+  min-height: 70px;
+}
+.main-footer .footer-copyright {
+  float: right;
+  width: 180px;
+  outline: 1px solid #f00;
+  min-height: 70px;
 }
