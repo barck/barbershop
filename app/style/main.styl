@@ -1,12 +1,8 @@
  @font-face
    font-family PTSans
    font-style normal
-   src url(fonts/PTSans/ptsansnarrow.woff2)
-   
- @font-face
-   font-family PTSans
-   font-style bold
    src url(fonts/PTSans/ptsansnarrowbold.woff2)
+   
    
 *, *::before, *::after
 	box-sizing: inherit
@@ -20,6 +16,9 @@ html
 	box-sizing: border-box
 	background: #000 url("../img/bg.png") center
 	font 16px PTSans, sans-serif
+	font-weight bold
+	text-transform uppercase
+
 	
 .container
 	width 960px
@@ -63,7 +62,6 @@ html
 			font-size 16px
 			font-weight bold
 			line-height 20px
-			text-transform uppercase
 			color #fff
 			text-align right
 			&:hover
@@ -91,15 +89,42 @@ main
 		.features-item
 			float left
 			width 300px
-			outline 1px solid red
-			min-height: 170px
 			margin-right 20px
+			text-align center
 			&:nth-child(3n)
 				margin-right 0
+			h3
+				display block
+				margin 0
+				margin-bottom 35px
+				padding-bottom 35px
+				font-size 30px
+				line-height 42px
+				font-weight bold
+				color #f7f4f1
+				position relative
+				&:after
+					content ""
+					width 20px
+					height 20px
+					background #fff
+					position absolute
+					bottom 0
+					left 50%
+					margin-left -10px
+					transform rotate(45deg)
+			p
+				margin 0
+				font-size 16px	
+				line-height 24px
+				font-weight bold
+				color #f7f4f1
+				
+
 	.index-content
 		padding 50px 80px
 		margin-bottom 35px
-		background #c3c3c3
+		background #c3c3c3 url("../img/index-content-bg.jpg")
 		width 100%
 		.index-content-left
 			min-height 300px
