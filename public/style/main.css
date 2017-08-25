@@ -368,6 +368,16 @@ template {
   display: none;
 }
 
+@font-face {
+  font-family: PTSans;
+  font-style: normal;
+  src: url("fonts/PTSans/ptsansnarrow.woff2");
+}
+@font-face {
+  font-family: PTSans;
+  font-style: bold;
+  src: url("fonts/PTSans/ptsansnarrowbold.woff2");
+}
 *,
 *::before,
 *::after {
@@ -381,7 +391,7 @@ template {
 html {
   box-sizing: border-box;
   background: #000 url("../img/bg.png") center;
-  font: 16px PT Sans Narrow, sans-serif;
+  font: 16px PTSans, sans-serif;
 }
 .container {
   width: 960px;
@@ -411,7 +421,7 @@ html {
   padding: 25px 20px;
   background: #000;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: bold;
   line-height: 20px;
   text-transform: uppercase;
   color: #fff;
@@ -429,7 +439,7 @@ html {
   padding: 25px 25px 25px 50px;
   background: #000;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: bold;
   line-height: 20px;
   text-transform: uppercase;
   color: #fff;
