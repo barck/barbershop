@@ -378,14 +378,9 @@ template {
 *::after {
   box-sizing: inherit;
 }
-.clearfix {
-  content: "";
-  display: table;
-  clear: both;
-}
 html {
   box-sizing: border-box;
-  background: #000 url("../img/bg.png") center;
+  background: #000 url("../img/bg.png") no-repeat;
   font: 16px PTSans, sans-serif;
   font-weight: bold;
   text-transform: uppercase;
@@ -399,9 +394,12 @@ html {
   background: #000;
   margin-bottom: 60px;
 }
+.main-header .main-header-layout {
+  display: flex;
+  justify-content: space-between;
+}
 .main-header .main-navigation {
   width: 780px;
-  float: left;
 }
 .main-header .main-navigation ul {
   margin: 0;
@@ -427,7 +425,6 @@ html {
   background: #242424;
 }
 .main-header .user-block {
-  float: right;
   position: relative;
 }
 .main-header .user-block .login-link {
@@ -439,7 +436,6 @@ html {
   font-weight: bold;
   line-height: 20px;
   color: #fff;
-  text-align: right;
 }
 .main-header .user-block .login-link:hover {
   background: #242424;
@@ -461,16 +457,17 @@ main .index-logo {
   width: 368px;
   height: 204px;
   margin: 0 auto;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 main .features {
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 80px;
 }
 main .features .features-item {
-  float: left;
   width: 300px;
-  margin-right: 20px;
   text-align: center;
+  outline: 2px solid #f00;
 }
 main .features .features-item:nth-child(3n) {
   margin-right: 0;
@@ -505,6 +502,8 @@ main .features .features-item p {
   color: #f7f4f1;
 }
 main .index-content {
+  display: flex;
+  justify-content: space-between;
   padding: 50px 80px;
   margin-bottom: 35px;
   background: #c3c3c3 url("../img/index-content-bg.jpg");
@@ -512,13 +511,11 @@ main .index-content {
 }
 main .index-content .index-content-left {
   min-height: 300px;
-  float: left;
   width: 380px;
   outline: 1px solid #f00;
 }
 main .index-content .index-content-right {
   min-height: 300px;
-  float: right;
   width: 300px;
   outline: 1px solid #f00;
 }
@@ -528,22 +525,23 @@ main .index-content .index-content-right {
   padding-bottom: 40px;
   background: #000 url("../img/footer-bg.png");
 }
+.main-footer .main-footer-layout {
+  display: flex;
+}
 .main-footer .footer-contacts {
-  float: left;
   width: 320px;
   margin-right: 60px;
-  outline: 1px solid #f00;
+  outline: 2px solid #f00;
   min-height: 70px;
 }
 .main-footer .footer-social {
-  float: left;
   width: 180px;
-  outline: 1px solid #f00;
+  outline: 2px solid #f00;
   min-height: 70px;
 }
 .main-footer .footer-copyright {
-  float: right;
+  margin-left: auto;
   width: 180px;
-  outline: 1px solid #f00;
+  outline: 2px solid #f00;
   min-height: 70px;
 }
