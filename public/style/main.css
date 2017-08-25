@@ -381,24 +381,75 @@ template {
 html {
   box-sizing: border-box;
   background: #000 url("../img/bg.png") center;
+  font: 16px PT Sans Narrow, sans-serif;
 }
 .container {
   width: 960px;
   padding: 0 10px;
   margin: 0 auto;
-  outline: 1px solid #ffc0cb;
 }
 .main-header {
-  border: 1px solid #fff;
+  background: #000;
   margin-bottom: 60px;
 }
 .main-header .main-navigation {
   width: 780px;
   float: left;
 }
+.main-header .main-navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+}
+.main-header .main-navigation ul li {
+  display: inline-block;
+}
+.main-header .main-navigation ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 25px 20px;
+  background: #000;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.main-header .main-navigation ul li a:hover {
+  background: #242424;
+}
 .main-header .user-block {
-  width: 140px;
   float: right;
+  position: relative;
+}
+.main-header .user-block .login-link {
+  display: block;
+  text-decoration: none;
+  padding: 25px 25px 25px 50px;
+  background: #000;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: right;
+}
+.main-header .user-block .login-link:hover {
+  background: #242424;
+}
+.main-header .user-block .login-link:before {
+  content: "";
+  background: url("../img/icon-login.png");
+  position: absolute;
+  width: 18px;
+  height: 16px;
+  top: 26px;
+  left: 20px;
+  opacity: 0.3;
+}
+.main-header .user-block .login-link:hover:before {
+  opacity: 1;
 }
 main .index-logo {
   width: 368px;
